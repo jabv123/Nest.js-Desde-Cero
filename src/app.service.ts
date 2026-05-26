@@ -2,11 +2,15 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
+  updateHello(): string {
+    return 'Actualizando saludo.';
+  }
+
   getHello(): string {
-    return 'Hello World, Bienvenido Andres!';
+    return 'Hello, Bienvenido Andres!';
   }
 
   postHello(): string {
-    return 'Creando Saludo.';
+    return 'Creando saludo.';
   }
 }
